@@ -29,7 +29,7 @@ jobs:
       
       - name: Create Report
         run:
-          cat ./report2.html
+          touch ./report2.html
       - name: github commit
         uses: EndBug/add-and-commit@v7
         with:
