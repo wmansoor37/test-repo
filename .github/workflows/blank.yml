@@ -30,7 +30,7 @@ jobs:
       - name: Create Report
         run: |
           touch ./report2.html
-          git branch --set-upstream-to=origin/report 1.6
+          git pull origin master
       - name: github commit
         uses: EndBug/add-and-commit@v7
         with:
