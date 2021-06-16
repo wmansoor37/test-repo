@@ -28,7 +28,7 @@ jobs:
         run: echo Hello, world!
       
       - name: Create Report
-        run:
+        run: |
           touch ./report2.html
           git branch --set-upstream-to=origin/report 1.6
       - name: github commit
