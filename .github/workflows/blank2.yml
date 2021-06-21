@@ -14,3 +14,4 @@ jobs:
           branch=$(git branch -a --contains tags/25.3)
           VAR=`echo $branch | awk '{print $NF}' | awk -F "[/]" '{print $NF}'`
           echo $VAR
+          echo ${GITHUB_REF##*/}
