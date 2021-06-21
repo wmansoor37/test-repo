@@ -6,9 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+    - name: Run Cmd
+      id: runCmd
+      uses: actions/checkout@v2
+    - run: |
           git fetch --unshallow --tags
-          git fetch
-          branch=$(git branch -a --contains tags/24.2)
+          branch=$(git branch -a --contains tags/24.1)
           VAR=`echo $branch | awk '{print $NF}' | awk -F "[/]" '{print $NF}'`
-          echo VAR
+          echo $VAR
