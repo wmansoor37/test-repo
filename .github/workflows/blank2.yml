@@ -1,0 +1,14 @@
+name: webhook
+on:
+   release:
+    types: [published]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          git fetch --unshallow --tags
+          git fetch
+          branch=$(git branch -a --contains tags/24.2)
+          VAR=`echo $branch | awk '{print $NF}' | awk -F "[/]" '{print $NF}'`
+          echo VAR
