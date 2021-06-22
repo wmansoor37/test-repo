@@ -1,5 +1,3 @@
-Science37 platform-client - Tag v1.3  \* { font-family: Segoe UI,Helvetica,Arial,sans-serif; } body { padding : 30px; border-left : 10px solid #dddddd; border-top : 10px solid #dddddd; } hr { background-color: #dddddd; } h4 { background-color: #dddddd; padding-top:5px; padding-bottom: 5px; padding-left: 5px; } table { border-collapse: collapse; width: 100%; } td, th { border: 1px solid #dddddd; text-align: left; padding: 8px; } tr:nth-child(even) { background-color: #eaecef; } a{ text-decoration: none; color: #0366d6; } 
-
 platform-client - Tag v1.3
 ==========================
 
